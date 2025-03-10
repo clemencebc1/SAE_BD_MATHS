@@ -1,0 +1,6 @@
+DROP TABLE Piece_Infos;
+DROP TYPE IndicesQualiteList FORCE;
+DROP TYPE IndicesQualiteT FORCE;
+DROP TYPE EquipeTab FORCE;
+DROP TYPE EquipeT FORCE;
+DROP TABLE PIECE;

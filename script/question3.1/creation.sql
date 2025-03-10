@@ -1,4 +1,4 @@
--- create DATABASE PRODUCTION;
+ -- create DATABASE PRODUCTION;
 
 -- create or replace type Details as object (
 --     idComposant number(10),
@@ -16,7 +16,7 @@
 --     member function get_quantite RETURN number IS
 --     BEGIN
 --     return SELF.quantite;
---     END;
+--     END;crivez les requˆetes suivantes :
 -- END;
 -- /
 -- CREATE TYPE DetailsList AS VARRAY(200) OF Details;
