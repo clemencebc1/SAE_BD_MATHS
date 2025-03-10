@@ -5,3 +5,5 @@ piece_composee(avion, panneau).
 piece_composee(panneau, vis).
 construire(X, Y) :- piece_composee(X,Y).
 construire(X,Y) :- piece_composee(X,Z), construire(Z,Y).
+
+construire(X, Y)?
