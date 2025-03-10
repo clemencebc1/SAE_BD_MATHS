@@ -25,6 +25,7 @@ CREATE TABLE PIECE (
     idPiece number(10) not null,
     nomPiece Varchar2(50),
     descriptionPiece Varchar2(100),
+    prix float(10),
     constraint PKidPiece PRIMARY KEY (idPiece)
 );
 

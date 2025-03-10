@@ -1,3 +1,16 @@
-insert into PIECE values (1, 'Vis', 'en titane');
+insert into PIECE values (1, 'Vis', 'en titane', 5.5);
+insert into PIECE values (2, 'Vis', 'en métal', 5.1);
+insert into PIECE values (3, 'Panneau', 'de fuselage', 30.0);
+insert into PIECE values (4, 'Rivets', 'en aluminium', 10.0);
+insert into PIECE values (5, 'Avion', 'Avion', 100000.1);
 insert into PIECE_SIMPLE values (1);
-insert into 
+insert into PIECE_SIMPLE values (2);
+insert into PIECE_SIMPLE values (4);
+insert into PIECE_COMPOSEE values (3);
+insert into Composant values (1);
+insert into Composant values (4);
+insert into Composant values (3);
+insert into Details values (3, 1, 8);
+insert into Details values (3, 4, 20);
+insert into PIECE_COMPOSEE values (5);
+insert into Details values (5, 3, 3);
