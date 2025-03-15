@@ -1,0 +1,26 @@
+piece(vis).
+piece(panneau).
+piece(avion).
+piece(rivets).
+piece_composee(avion, panneau).
+piece_composee(panneau, vis).
+piece_composee(panneau, rivets).
+construire(X, Y) :- piece_composee(X,Y).
+construire(X,Y) :- piece_composee(X,Z), construire(Z,Y).
+
+construire(X, Y)?
+
+
+La requête : select * from Details natural join Composant natural join Piece p1,Piece p2 where p1.idPiece = idComposant and idDetailsComp = idComposant and idDetailsPiece = p2.idPiece order by p2.idPiece;
+
+
+
+couter(X, Y) :- prixPiece(X, Y).
+couter(X,Y) :- construire(X,Z), prixPiece(Z,Y).
+
+verifier(X) :- couter(X,Y), Y = 300.
+couterMoinsDe300(X) :- piece(X), not verifier(X).
+
+couterMoinsDe300(X)?
+
+Aussi possible de remplacer Y par 300 lors de couter(X,300).
